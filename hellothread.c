@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
+
 void *run_func(void *arg) {
     char *name = arg;
 
@@ -10,6 +11,7 @@ void *run_func(void *arg) {
 
     return NULL;
 }
+
 
 int main(void) {
     printf("Launching threads\n");
