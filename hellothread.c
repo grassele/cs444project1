@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <pthread.h>
+// #include <unistd.h>
 
 
 void *run_func(void *arg) {
@@ -7,6 +8,7 @@ void *run_func(void *arg) {
 
     for (int i = 0; i <= 5; i++) {
         printf("%s: %d\n", name, i);
+        // sleep(0);    // intersperses outputs more (more scheduling handoffs)
     }
 
     return NULL;
